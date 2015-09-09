@@ -1,0 +1,53 @@
+/* колонка для сетки из семи ячеек*/
+
+.col-md-1-7 {
+	width: 14.2857%; /*100 / 7*/
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+
+.calendar {
+	border-left: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	width: 100%;
+	max-width: 1800px;
+	min-width: 640px;
+}
+	.calendar .days {
+		box-sizing: border-box;
+		margin: 0;
+	}
+
+.calendar .days [class^=col-] {
+	padding: 10px;
+	background-color: #dff0d8;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	text-align: right;
+	min-height: 100px;
+	box-sizing: border-box;
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	-ms-transition: background-color 0.2s;
+	-o-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+	.calendar .days [class^=col-]:hover {
+		background-color: #5cb85c;
+	}
+	.calendar .days .prev-month {
+		background: lightgray;
+	}
+.calendar .weekdays {
+	border-bottom: 1px solid #cccccc;
+}
+
+	.calendar .weekdays [class^=col-] {
+		text-align: center;
+		font-weight: bold;
+		padding: 10px 0;
+	}

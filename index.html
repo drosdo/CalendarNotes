@@ -1,9 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Calendar With Notes</title>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/calendar.css">
+
+	<script src="js/lib/jquery-min.js"></script>
+	<script src="js/lib/underscore.js"></script>
+	<script src="js/lib/backbone.js"></script>
+	<script src="js/lib/backbone.localStorage.js"></script>
+	<script src="js/models/monthModel.js"></script>
+	<script src="js/models/noteModel.js"></script>
+	<script src="js/collections/noteCollection.js"></script>
+	<script src="js/views/monthView.js"></script>
+	<script src="js/views/weekView.js"></script>
+	<script src="js/views/dayView.js"></script>
+	<script src="js/router/appRouter.js"></script>
 </head>
 <body>
-чочочо
+<div class="pull-right form-inline">
+	<div class="btn-group">
+		<button class="btn btn-primary" data-calendar-nav="prev"><< Prev</button>
+		<button class="btn" data-calendar-nav="today">Today</button>
+		<button class="btn btn-primary" data-calendar-nav="next">Next >></button>
+	</div>
+</div>
+<h1>CALENDAR</h1>
+
+<div class="main">
+<div class="calendar">
+	<!--<div class="row weekdays">
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+	</div>
+	<div class="row days">
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+		<div class="col-md-1-7">11</div>
+	</div>
+-->
+
+
+
+</div>
+</div>
+
+<script id="tmpl_month" type="text/template">
+	<div class="month">
+
+	</div>
+
+</script>
+
+<script type="text/template" id="tmpl_day">
+    <%= date %>
+</script>
+
 </body>
 </html>
