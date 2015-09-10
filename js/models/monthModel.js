@@ -14,13 +14,14 @@ $(function () {
 			monthsNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 		},
 		initialize: function (options) {
+			this.set('month', options.month - 1);
 			this.set('name', this.getName());
 			this.set('days', this.getDaysInMonth());
 			this.set('weeks', this.getWeeks());
 			this.set('start', this.getStartDay());
 		},
 		getName: function () {
-			return this.get('monthsNames')[this.get('month')-1];
+			return this.get('monthsNames')[this.get('month')];
 		},
 		getWeeks: function () {
 			return Math.ceil((this.get('days') + this.getStartDay()) / 7);

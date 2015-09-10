@@ -14,6 +14,7 @@ $(function () {
 						d2 = new Date(year, month, date);
 
 					if(d1.getTime() == d2.getTime()){
+						console.log(model)
 						return model;
 					}
 

@@ -15,7 +15,8 @@ $(function () {
 		},
 		render: function () {
 			this.$el.html( this.template( {
-				date: this.date
+				date: this.date,
+				titles: this.collection.map('title')
 			}));
 			return this;
 		}
