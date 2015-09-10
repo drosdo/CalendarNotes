@@ -11,7 +11,6 @@ $(function () {
 			'click': 'switchToDayView'
 		},*/
 		initialize: function (options) {
-			console.log(options);
 			this.date = options.date
 		},
 		render: function () {
