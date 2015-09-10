@@ -10,8 +10,7 @@ $(function () {
 			this.main = options.main;
 			this.notes = options.notes;
 
-			CalendarDD.Router.navigate = this.navigate.bind(this);
-			this.month(2014,0)
+			this.navigate = this.navigate.bind(this);
 		},
 		routes: {
 			'': 'month',
@@ -28,8 +27,9 @@ $(function () {
 		main: $('.main'),
 		notes: new CalendarDD.Collections.Notes([
 				{ "title": "note one", "date": "2014 01 06", "body": "asdasdasdasdasd asdsa as"},
+				{ "title": "note ddd", "date": "2014 01 06", "body": "asdasdasdasdasd asdsa as"},
 				{ "title": "note two", "date": "2014 01 07", "body": "x`zx asdsa as"},
 				{ "title": "note three", "date": "2014 01 14", "body": "x`zx asdsa as"}
 			])
-	}).navigate()
+	}).month(2014,1)
 });

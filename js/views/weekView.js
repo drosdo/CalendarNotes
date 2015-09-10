@@ -15,7 +15,7 @@ $(function () {
 			if (this.week === 0) {
 				var firstDay = month.getStartDay();
 				var prevMonthDays = month.getPrevMonthDays();
-				console.log(month.get('month'))
+				console.log(month.get('month'));
 				for (var i = 0; i < firstDay; i++) {
 
 
